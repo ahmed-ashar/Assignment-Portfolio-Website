@@ -1,15 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
 
 * {
-  /* width: 0; */
   margin: 0;
   padding: 0;
   font-family: "Space Grotesk", sans-serif;
-  /* box-sizing: border-box; */
-  /* background-color: tomato; */
 }
 
-#main {
+#main-navbar {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,45 +23,23 @@
     rgb(5, 12, 22) 101.48%
   );
   width: 100%;
-  box-shadow: 0 0.125rem 0.25rem rgba(55, 55, 55, 0.075);
   z-index: 1000;
-
 }
 
 #navbar {
+  max-width: 1300px;
   width: 100%;
-  max-width: 1300px; /* Adjust as needed */
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 40px; /* Adjust side space */
+  padding: 0 40px;
 }
 
-#main.scrolled {
-  background: #040c16; /* Ya koi bhi color jo aap chahen */
+#main-navbar.scrolled {
+  box-shadow: 0 0.125rem 0.25rem rgba(55, 55, 55, 0.075);
+  background: #040c16;
 }
-/* .header-top-fixed {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 111;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  transition: ease all 0.35s;
-  background-color: transparent;
-} */
-.fixed-header {
-}
-
-/* #logo{
-    color: white;
-    font-size: 24px;
-    font-weight: bold;
-    margin-right: auto;
-    padding-left: 20px;
-} */
 
 #nav-links {
   display: flex;
@@ -77,13 +52,11 @@
   color: white;
   text-decoration: none;
   padding: 8px 20px;
-  /* transition: background-color 0.3s ease; */
   font-size: 14px;
   letter-spacing: 1px;
   font-weight: 500;
   text-transform: uppercase;
   transition: all 0.4s ease;
-  /* border-bottom: 2px solid #fff; */
 }
 
 .btn {
@@ -99,4 +72,125 @@
   transition: all 0.35s ease;
   font-size: 15px;
   letter-spacing: 1px;
+  margin-right: 20px;
+}
+
+#hero-section {
+  width: 100%;
+  padding-top: 140px;
+  background: linear-gradient(
+    90deg,
+    rgb(7, 35, 59) 1.67%,
+    rgb(4, 29, 52) 39.95%,
+    rgb(4, 25, 45) 58.24%,
+    rgb(4, 14, 24) 80.28%,
+    rgb(5, 12, 22) 101.48%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hero-container {
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+}
+
+#left-section {
+  width: 50%;
+}
+
+#first-heading {
+  background: rgba(7, 136, 255, 0.2);
+  border-radius: 4px;
+  color: #fff;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 4px;
+  line-height: 20px;
+  padding: 5px 12px;
+  text-transform: uppercase;
+}
+
+#second-heading {
+  color: #fff;
+  font-size: 70px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+#third-heading {
+  color: #0788ff;
+  font-size: 70px;
+  font-weight: 700;
+  margin: 0 0 30px;
+  text-transform: uppercase;
+}
+
+#description {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  line-height: 150%;
+  margin-bottom: 30px;
+}
+
+.social-icon {
+  align-items: center;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  color: #fff;
+  display: inline-flex;
+  height: 46px;
+  justify-content: center;
+  margin-right: 8px;
+  position: relative;
+  top: 0;
+  transition: top 0.35s ease;
+  width: 46px;
+}
+
+.fa-facebook-f,
+.fa-linkedin-in {
+  background: #0788ff;
+}
+
+.fa-globe {
+  background: #f26798;
+}
+
+#right-section {
+  width: 50%;
+}
+
+#right-section img {
+  width: 100%;
+}
+
+#companies {
+  width: 100%;
+  background-color: rgba(7, 136, 255, 0.1);
+  padding-bottom: 1.5rem !important;
+  padding-top: 1.5rem !important;
+}
+
+.companies-container img {
+  width: 16%;
+  padding: 16px 25px;
+}
+
+.companies-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1350px;
+  margin: 0 auto;
 }
