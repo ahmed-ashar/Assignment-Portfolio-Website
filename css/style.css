@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+* {
+  /* width: 0; */
+  margin: 0;
+  padding: 0;
+  font-family: "Space Grotesk", sans-serif;
+  /* box-sizing: border-box; */
+  /* background-color: tomato; */
+}
+
+#main {
+    /* padding: 0 145px; */
+    background-color: #040c16;
+    width: 100%;
+  
+}
+
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  left: 9%;
+  right: 9%;
+  height: 95px;
+  background-color: #040c16;
+  /* width: 100%; */
+  box-shadow: 0 0.125rem 0.25rem rgba(55, 55, 55, 0.075);
+}
+
+/* .header-top-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 111;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  transition: ease all 0.35s;
+  background-color: transparent;
+} */
+.fixed-header {
+  }
+
+/* #logo{
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: auto;
+    padding-left: 20px;
+} */
+
+#nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+#links a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 20px;
+  /* transition: background-color 0.3s ease; */
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: all 0.4s ease;
+  /* border-bottom: 2px solid #fff; */
+}
+
+
+
+.btn {
+  background-color: #0788ff;
+  border: 2px solid #0788ff;
+  border-radius: 40px;
+  box-shadow: none;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 500;
+  outline: none;
+  padding: 13px 30px;
+  transition: all 0.35s ease;
+  font-size: 15px;
+  letter-spacing: 1px;
+
+}
