@@ -63,13 +63,12 @@ html {
   font-weight: 500;
   text-transform: uppercase;
   transition: all 0.4s ease;
-  position: relative; /* Needed for ::after */
+  position: relative; 
 }
 
 .links a {
   position: relative;
   display: inline-block;
-  /* color: white; */
   transition: color 0.3s;
 }
 
@@ -91,11 +90,6 @@ html {
 .links a.active::after {
   transform: scaleX(1);
 }
-
-/* .links a:hover,
-.links a.active {
-  color: #0788ff;
-} */
 
 .btn {
   background-color: #0788ff;
@@ -143,12 +137,14 @@ html {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 0 40px;
+  padding-right: 40px;
+  box-sizing: border-box;
 }
 
 .left-section {
   width: 50%;
+  padding-bottom: 80px;
+  padding-top: 100px;
 }
 
 .first-heading {
@@ -223,9 +219,47 @@ html {
   width: 50%;
 }
 
-.right-section img {
-  width: 100%;
+.right-section {
+  position: relative;
 }
+
+#straight-lines {
+  position: absolute;
+  top: 0;
+  right: -30px;
+  width: 100%;
+  height: 100%;
+  filter: blur(1px);
+  opacity: 1;
+}
+
+#sphere1{
+  position: absolute;
+  top: 30px;
+  left: 60px;
+    filter: blur(3px);
+
+  width: 20%;
+}
+
+#sphere2{
+  position: absolute;
+  bottom: 100px;
+  right:  -50px;
+  width: 30%;
+  z-index: 4;
+    filter: blur(3px);
+
+}
+
+#main-image{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 110%;
+  /* height: auto; */
+}
+
 
 .companies {
   width: 100%;
@@ -290,15 +324,40 @@ html {
   width: 50%;
   position: relative;
 }
+
+.left-container div{
+  position: relative;
+  z-index: 2;
+  width: 520px;
+  height: 700px;
+  top: -10px;
+  left: 0;
+  border-radius: 30px;
+  border: 2px solid #707476;
+  background-color: #2d4a5f;
+  /* filter: opacity(0.8); */
+  /* opacity: 0.5; */
+  /* filter: blur(1px); */
+}
+
+/* .left-container div img{
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+} */
+
 .about-banner {
   position: absolute;
   z-index: 2;
-  top: -340px;
-  left: 10;
+  width: 1100px;
+  bottom: 0;
+  right: -250px;
+  filter: none;
 }
 .about-round {
   position: absolute;
-  top: 50px;
+  bottom:  -30px;
   left: -110px;
   width: 300px;
   height: 300px;
@@ -733,10 +792,11 @@ p {
   position: absolute;
   top: 90px;
   left: 100px;
+  box-shadow: #2d4a5f 0px 0px 20px;
 }
 
 .contact-info {
-  margin-top: 150px;
+  margin-top: 170px;
   color: #ddd;
   padding-left: 40px;
 }
