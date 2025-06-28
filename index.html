@@ -10,6 +10,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <title>Document</title>
   </head>
@@ -175,48 +179,109 @@
         </div>
       </section>
 
+
+
       <section class="projects-section" id="Projects">
         <div class="project-container">
           <h1 class="first-heading">MY WORK</h1>
           <h1 class="second-project-heading">RECENT PROJECT</h1>
-          <div class="projects-container">
-            <div class="project-card">
-              <div class="project-img">
-                <img src="images/popup-project-1.jpg" alt="Website Design" />
-              </div>
-              <div class="bottom-container">
-                <div>
-                  <h3>Website Design</h3>
-                  <p class="card-description">Web Design, App Design</p>
-                </div>
-                <i class="fa-solid fa-arrow-right arrow-button"></i>
-              </div>
-            </div>
 
-            <div class="project-card">
-              <div class="project-img">
-                <img src="images/popup-project-1.jpg" alt="Website Design" />
-              </div>
-              <div class="bottom-container">
-                <div>
-                  <h3>Website Design</h3>
-                  <p class="card-description">Web Design, App Design</p>
+          <div class="projects-container swiper">
+            <div class="slider-wrapper">
+              <div class="card-list swiper-wrapper">
+                <div class="project-card swiper-slide">
+                  <div class="project-img">
+                    <img
+                      src="images/popup-project-1.jpg"
+                      alt="Website Design"
+                    />
+                    <div class="plus-circle"><i class="fa-solid fa-plus"></i></div>
+                  </div>
+                  <div class="bottom-container">
+                    <div>
+                      <h3>Website Design</h3>
+                      <p class="card-description">Web Design, App Design</p>
+                    </div>
+                    <i class="fa-solid fa-arrow-right arrow-button"></i>
+                  </div>
                 </div>
-                <i class="fa-solid fa-arrow-right arrow-button"></i>
-              </div>
-            </div>
 
-            <div class="project-card">
-              <div class="project-img">
-                <img src="images/popup-project-1.jpg" alt="Website Design" />
-              </div>
-              <div class="bottom-container">
-                <div>
-                  <h3>Website Design</h3>
-                  <p class="card-description">Web Design, App Design</p>
+                <div class="project-card swiper-slide"> 
+                  <div class="project-img">
+                    <img
+                      src="images/popup-project-1.jpg"
+                      alt="Website Design"
+                    />
+                                        <div class="plus-circle"><i class="fa-solid fa-plus"></i></div>
+
+                  </div>
+                  <div class="bottom-container">
+                    <div>
+                      <h3>Website Design</h3>
+                      <p class="card-description">Web Design, App Design</p>
+                    </div>
+                    <i class="fa-solid fa-arrow-right arrow-button"></i>
+                  </div>
                 </div>
-                <i class="fa-solid fa-arrow-right arrow-button"></i>
+
+                <div class="project-card swiper-slide">
+                  <div class="project-img">
+                    <img
+                      src="images/popup-project-1.jpg"
+                      alt="Website Design"
+                    />
+                                        <div class="plus-circle"><i class="fa-solid fa-plus"></i></div>
+
+                  </div>
+                  <div class="bottom-container">
+                    <div>
+                      <h3>Website Design</h3>
+                      <p class="card-description">Web Design, App Design</p>
+                    </div>
+                    <i class="fa-solid fa-arrow-right arrow-button"></i>
+                  </div>
+                </div>
+
+                <div class="project-card swiper-slide">
+                  <div class="project-img">
+                    <img
+                      src="images/popup-project-1.jpg"
+                      alt="Website Design"
+                    />
+                                        <div class="plus-circle"><i class="fa-solid fa-plus"></i></div>
+
+                  </div>
+                  <div class="bottom-container">
+                    <div>
+                      <h3>Website Design</h3>
+                      <p class="card-description">Web Design, App Design</p>
+                    </div>
+                    <i class="fa-solid fa-arrow-right arrow-button"></i>
+                  </div>
+                </div>
+
+                <div class="project-card swiper-slide">
+                  <div class="project-img">
+                    <img
+                      src="images/popup-project-1.jpg"
+                      alt="Website Design"
+                    />
+                    
+                  </div>
+                  <div class="bottom-container">
+                    <div>
+                      <h3>Website Design</h3>
+                      <p class="card-description">Web Design, App Design</p>
+                    </div>
+                    <i class="fa-solid fa-arrow-right arrow-button"></i>
+                  </div>
+                </div> 
               </div>
+
+              <div class="swiper-pagination"></div>
+              <!-- <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div> -->
+
             </div>
           </div>
         </div>
@@ -437,9 +502,13 @@
         </div>
       </section>
 
-      <section class="testimonials-section">
-        <div class="testimonial-container">
-          <img class="half" src="images/effect-4.svg" alt="" />
+
+      <section class="for-half">
+        <img class="half" src="images/effect-4.svg" alt="" />
+      <div class="testimonials-section swiper" >
+        <div class="swiper-wrapper">
+
+        <div class="testimonial-container swiper-slide">
           <h1 class="first-heading">Testimonial</h1>
           <h1 class="second-about-heading">Over <span> 8,000+ </span></h1>
           <h1 class="second-about-heading">PEOPLE TRUST ME</h1>
@@ -456,6 +525,32 @@
           <h1>PAMELA ANDERAS</h1>
           <p>Company Name</p>
         </div>
+
+        <div class="testimonial-container swiper-slide">
+          <!-- <img class="half" src="images/effect-4.svg" alt="" /> -->
+          <h1 class="first-heading">Testimonial</h1>
+          <h1 class="second-about-heading">Over <span> 8,000+ </span></h1>
+          <h1 class="second-about-heading">PEOPLE TRUST ME</h1>
+          <div class="avatar"><img src="images/avatar-1.jpg" alt="" /></div>
+          <p>
+            Donec tellus sem, tempor ac purus a, porttitor lobortis purus. Etiam
+            quis nisl eget ex pulvinar consectetur. Suspendisse potenti. Cras
+            non elementum risus. Fusce massa tellus, consequat a rutrum et,
+            aliquam a lacus. Quisque viverra egestas tincidunt. Nunc nec nisi
+            sed enim consectetur ullamcorper. Vestibulum at neque tortor.
+            Pellentesque urna enim, ultricies at tortor eu, elementum egestas
+            leo. In hac habitasse platea dictumst.
+          </p>
+          <h1>PAMELA ANDERAS</h1>
+          <p>Company Name</p>
+        </div>
+
+        </div>
+
+                      <div class="swiper-pagination"></div>
+
+      </div>
+
       </section>
 
       <section class="contact-container" id="Contact">
@@ -523,6 +618,9 @@
         </div>
       </section>
     </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <script>
       let lastScroll = 0;
       const main = document.getElementById("main-navbar");
@@ -543,6 +641,70 @@
           this.classList.add("active");
         });
       });
+
+
+
+      const swiper1 = new Swiper('.slider-wrapper', {
+  loop: true,
+  // grabCursor: true,
+  spaceBetween: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    dynamicBullets: true,
+  },
+
+  // Navigation arrows
+  // navigation: {
+  //   nextEl: '.swiper-button-next',
+  //   prevEl: '.swiper-button-prev',  
+  // },
+
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+      // spaceBetween: 20,
+    },
+    620: {
+      slidesPerView: 2,
+      // spaceBetween: 30,
+    },
+    // 768: {
+    //   slidesPerView: 3,
+    //   spaceBetween: 40,
+    // },
+    1024: {
+      slidesPerView:4,
+      spaceBetween:20,
+    },
+  }
+});
+
+const swiper2 = new Swiper('.testimonials-section.swiper', {
+  loop: true,
+  // grabCursor: true,
+  // spaceBetween: 20, // Set a number value
+
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    dynamicBullets: true,
+  },
+
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    620: {
+      slidesPerView: 1,
+    },
+    1024: {
+      slidesPerView: 1,
+    },
+  }
+});
     </script>
   </body>
 </html>
