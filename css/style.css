@@ -11,6 +11,9 @@ html {
   scroll-behavior: smooth;
 }
 
+
+/* Navbar Section Start */
+
 #main-navbar {
   display: flex;
   justify-content: center;
@@ -73,7 +76,7 @@ html {
   transition: color 0.3s;
 }
 
-.links a::after {
+.links a::after{
   content: "";
   position: absolute;
   left: 0;
@@ -88,7 +91,7 @@ html {
 }
 
 .links a:hover::after,
-.links a.active::after {
+.links a:active::after {
   transform: scaleX(1);
 }
 
@@ -115,9 +118,12 @@ html {
   box-shadow: 0 4px 20px rgba(7, 136, 255, 0.15);
 }
 
+/* Navbar Section End */
+
+/* Hero Section Start */
+
 .fadeInBottom{
     animation: fadeInBottom 1.6s ease-in-out 1;
-
 }
 
 .hero-section {
@@ -381,6 +387,8 @@ html {
   /* height: auto; */
 }
 
+/* Hero Section End */
+
 /* .companies {
   width: 100%;
   background-color: rgba(7, 136, 255, 0.1);
@@ -431,6 +439,8 @@ html {
     transform: translateX(-50%);
   }
 } */
+
+/* Companies Section Start */
 
 .companies {
   background-color: rgba(7, 136, 255, 0.1);
@@ -492,6 +502,10 @@ html {
   /* filter: grayscale(0); */
   cursor: pointer;
 }
+
+/* Companies Section End */
+
+/* About Section Start */
 
 .about-section {
   width: 100%;
@@ -661,8 +675,9 @@ html {
   line-height: 150%;
 }
 
+/* About Section End */
 
-
+/* Project Section Start */
 
 .projects-section {
   width: 100%;
@@ -873,9 +888,9 @@ html {
     opacity: 1;
   }
 }
+/* Project Section End */
 
-
-
+/* Service Section Start */
 
 .services-section {
   width: 100%;
@@ -990,10 +1005,10 @@ p {
   }
 }
 
+/* Service Section End */
 
 
-
-
+/* Experience Section Start */
 
 .experience-section {
   width: 100%;
@@ -1063,11 +1078,12 @@ p {
   font-size: 16px;
 }
 
+/* Experience Section End */
 
 
 
 
-
+/* Testimonial Section Start */
 
 .testimonials-section {
   max-width: 1300px;
@@ -1186,6 +1202,11 @@ overflow: hidden;
   opacity: 1;
 }
 
+/* Testimonial Section End */
+
+
+
+
 /* @media (max-width: 800px) {
   .testimonials-section {
     max-width: 98vw;
@@ -1202,7 +1223,7 @@ overflow: hidden;
 
 
 
-
+/* Contact Section Start */
 
 .contact-container {
   padding: 40px;
@@ -1389,6 +1410,11 @@ form {
   margin-bottom: 100px;
 }
 
+/* Contact Section End */
+
+
+/* Footer Start */
+
 .footer-section {
   border-top: 1px solid #707476;
   width: 100%;
@@ -1398,3 +1424,5 @@ form {
   height: 60px;
   margin-top: 50px;
 }
+
+/* Footer End */
