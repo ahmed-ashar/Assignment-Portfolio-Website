@@ -523,6 +523,8 @@ html {
   width: 45%;
   position: relative;
   min-height: 350px;
+        animation: fadeInOpacity 1.4s ease-in-out 1;
+
 }
 
 .right-container img {
@@ -530,10 +532,13 @@ html {
   top: -60px;
   right: -180px;
   animation: rotate360 20s linear infinite;
+
 }
 .left-container {
   width: 50%;
   position: relative;
+    animation:  fadeInLeft 1.4s ease-in-out 1;
+
 }
 
 .left-container div {
@@ -572,7 +577,9 @@ html {
   left: -110px;
   width: 300px;
   height: 300px;
-  animation: rotate180 20s linear infinite;
+  animation: rotate180 20s linear infinite,fadeInOpacity 1.4s ease-in-out 1;
+          /* animation: fadeInOpaciity 1.4s ease-in-out 1; */
+
   z-index: 1;
 }
 @keyframes rotate180 {
@@ -776,6 +783,10 @@ html {
   /* color: pink; */
 }
 
+/* .swiper-pagination{
+  margin-right: 100px;
+} */
+
 .projects-container {
   /* display: flex; */
   /* justify-content: center;
@@ -968,6 +979,16 @@ p {
   }
 }
 
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-80px); /* Neeche se shuru */
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0); /* Apni jagah par aa jaye */
+  }
+}
 
 
 
@@ -1049,61 +1070,131 @@ p {
 
 
 .testimonials-section {
+  max-width: 1300px;
   width: 100%;
+  margin: 60px auto 40px auto;
+  /* background: #181c24; */
+  border-radius: 16px;
+  /* box-shadow: 0 4px 32px rgba(7, 136, 255, 0.07); */
+  padding: 40px 0 30px 0;
+  position: relative;
 }
 
-.testimonial-container {
-  /* max-width: 1300px; */
-  width: 100%;
-  margin: 0 auto;
-  padding-top: 100px;
+.upparpart-testimonial{
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  position: relative;
-  margin-bottom: 100px;
+}
+
+.testimonial-swiper {
+  width: 100%;
+  min-height: 320px;
+}
+
+.testimonial-swiper .swiper-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* background: transparent; */
+  padding: 30px 24px;
+  box-sizing: border-box;
+}
+
+.testimonial-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background: transparent; */
+  border-radius: 12px;
+  width: 100%;
+  gap: 10px;
+  margin-bottom: 20px;
+        animation: fadeInOpacity 1.4s ease-in-out 1;
+
+}
+
+.for-half{
+position: relative;
 }
 
 .half {
-  position: absolute;
-  top: 25%;
-  right: -140px;
-  opacity: 4;
-  overflow: hidden;
+position: absolute;
+top: 150px;
+right: -140px;
+opacity: 4;
+overflow: hidden;
 }
 
 .avatar {
-  width: 130px;
-  height: 130px;
-  background-color: #707476;
+  width: 150px;
+  height: 150px;
+  background: #ffffff3d;
+  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 50%;
-  margin: 30px 0;
+  margin-bottom: 18px;
+  overflow: hidden;
 }
 
 .avatar img {
   width: 85%;
   border-radius: 50%;
+  display: block;
 }
 
-.testimonial-container p {
+.testimonial-card p {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
   text-align: center;
-  width: 60%;
+  line-height: 1.7;
+  margin: 0 250px;
+}
+
+.testimonial-card h1 {
+  color: #fff;
   font-size: 18px;
   font-weight: 700;
+  margin: 10px 0 0 0;
 }
 
-.testimonial-container h1 {
-  color: #fff;
-  margin-top: 10px;
+.testimonial-card h5{
+  color: #eee;
+  font-size: 16px;
+  font-weight: 300;
+  margin: 5px ;
+}
+/* .testimonial-card p:last-child {
+  color: #aaa;
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 8px;
+} */
+
+.swiper .swiper-pagination-bullet {
+  background: #fff;
+  opacity: 0.3;
+  width: 10px;
+  height: 10px;
+  margin: 0 3px !important;
 }
 
+.swiper .swiper-pagination-bullet-active {
+  opacity: 1;
+}
 
-
-
+/* @media (max-width: 800px) {
+  .testimonials-section {
+    max-width: 98vw;
+    padding: 20px 0 20px 0;
+  }
+  .testimonial-swiper .swiper-slide {
+    padding: 18px 5px;
+  }
+} */
 
 
 
@@ -1148,9 +1239,11 @@ p {
 
 .top-right {
   width: 65%;
+  animation: fadeInRight 1.4s ease-in-out 1;
 }
 .contact-top h2 {
   font-size: 40px;
+
 }
 
 .contact-top p {
@@ -1183,6 +1276,8 @@ p {
   margin-top: 170px;
   color: #ddd;
   padding-left: 40px;
+        animation: fadeInBottom 1.4s ease-in-out 1;
+
 }
 
 .contact-info p {
@@ -1199,6 +1294,8 @@ p {
 
 .social-icons {
   margin-top: 20px;
+        /* animation: fadeInRight 1.4s ease-in-out 1; */
+
 }
 
 .social-icons a {
@@ -1277,11 +1374,15 @@ form {
   transition: 0.3s;
   width: 100%;
   transition: background 0.3s, transform 0.3s;
+  text-transform: uppercase;
+    border: 2px solid #0d6efd;
+
 }
 
 .submit-btn:hover {
-  background-color: #007bff;
-  transform: scale(1.03);
+  background-color: #000;
+  border: 2px solid #fff;
+  /* transform: scale(1.03); */
 }
 
 .last {
