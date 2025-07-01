@@ -21,9 +21,11 @@
 
   <body>
     <!-- /* Navbar Section Start */ -->
+     <header class="header">
     <section id="main-navbar">
       <section class="navbar">
-        <img class="logo" src="images/logo.png" alt="" />
+        <div class="logo-container">
+        <img class="logo" src="images/logo.png" alt="" /></div>
         <div class="nav-links">
           <div class="links">
             <a href="#Home">HOME</a>
@@ -36,8 +38,21 @@
             <button class="btn">LETS'TALK</button>
           </div>
         </div>
+        <div class="bars">
+          <i class="fa-solid fa-bars"></i>
+        </div>
       </section>
     </section>
+    <div class="res-navbar">
+      <div class="res-links">
+        <a href="#Home">HOME</a>
+        <a href="#AboutMe">ABOUT ME</a>
+        <a href="#Projects">PROJECTS</a>
+        <a href="#Services">SERVICES</a>
+        <a href="#Contact">CONTACT</a>
+      </div>
+    </div>
+    </header>
     <!-- /* Navbar Section End */ -->
 
     <section class="hero-section" id="Home">
@@ -55,13 +70,15 @@
               seamless digital experiences. Every line of code is written with
               purpose building efficient solutions across platforms.
             </p>
-            <div>
+            <div class="button-container">
               <button class="btn fadeInBottom">
                 GET IN TOUCH <i class="fa-solid fa-arrow-right"></i>
               </button>
+              <div class="social-icons">
               <i class="fa-brands fa-facebook-f social-icon"></i>
               <i class="fa-solid fa-globe social-icon"></i>
               <i class="fa-brands fa-linkedin-in social-icon"></i>
+              </div>
             </div>
           </div>
           <div class="right-section">
@@ -77,11 +94,11 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> </section>
       <!-- /* Hero Section End */ -->
 
       <!-- /* Companies Section Start */ -->
-      <section class="companies">
+       <section class="companies">
         <div
           class="slider"
           style="--width: 200px; --height: 150px; --quantity: 7"
@@ -110,12 +127,12 @@
             </div>
           </div>
         </div>
-      </section>
+      </section>  
       <!-- /* Companies Section End */ -->
 
       <!-- /* About Section Start */ -->
-      <section class="about-section" id="AboutMe">
-        <div>
+       <section class="about-section" id="AboutMe">
+        
           <div class="about-container">
             <div class="left-container">
               <img
@@ -161,15 +178,16 @@
                 GET IN TOUCH <i class="fa-solid fa-arrow-right"></i>
               </button>
             </div>
-          </div>
+          
         </div>
       </section>
       <!-- /* About Section End */ -->
 
       <!-- /* Project Section Start */ -->
-      <section class="projects-section" id="Projects">
+       <section class="projects-section" id="Projects">
         <div class="project-container">
-          <h1 class="first-heading">MY WORK</h1>
+          <div class="pro-section">
+          <h1 class="first-heading forPadding">MY WORK</h1>
           <h1 class="second-project-heading">RECENT PROJECT</h1>
 
           <div class="projects-container swiper">
@@ -452,22 +470,22 @@
               </div>
 
               <div class="swiper-pagination"></div>
-              <!-- <div class="swiper-button-prev"></div>
-              <div class="swiper-button-next"></div> -->
             </div>
           </div>
+          </div>
         </div>
-      </section>
+      </section> 
       <!-- /* Project Section End */ -->
 
       <!-- /* Service Section Start */ -->
-      <section class="services-section" id="Services">
+       <section class="services-section" id="Services">
         <div class="service-container">
+          <div class="service-section">
           <h1 class="first-heading">MY WORK</h1>
           <h1 class="second-about-heading">
             Design <span> services</span> I am providing
           </h1>
-
+</div>
           <section class="card-section">
             <div class="card">
               <img
@@ -492,7 +510,7 @@
               </div>
             </div>
 
-            <div class="card">
+            <!-- <div class="card">
               <img
                 src="https://images.unsplash.com/photo-1614918848092-b62132d8f3cc?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt="UI/UX Redesign"
@@ -562,14 +580,14 @@
                   <i class="fas fa-star-half-alt"></i>
                 </div>
               </div>
-            </div>
+            </div> -->
           </section>
         </div>
-      </section>
+      </section> 
       <!-- /* Service Section End */ -->
 
       <!-- /* Experience Section Start */ -->
-      <section class="experience-section">
+       <section class="experience-section">
         <div class="experience-container">
           <h1 class="first-heading">Experience</h1>
           <h1 class="second-about-heading">My Work <span> Experience</span></h1>
@@ -637,12 +655,12 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> 
       <!-- /* Experience Section End */ -->
 
       <!-- /* Testimonial Section Start */ -->
-      <section class="for-half">
-        <img class="half" src="images/effect-4.svg" alt="" />
+      <!-- <img class="half" src="images/effect-4.svg" alt="" /> -->
+      <!-- <section class="for-half">
         <div class="testimonials-section">
           <div class="testimonial-container">
             <div class="upparpart-testimonial">
@@ -765,11 +783,11 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
       <!-- /* Testimonial Section End */ -->
 
       <!-- /* Contact Section Start */ -->
-      <section class="contact-container" id="Contact">
+      <!-- <section class="contact-container" id="Contact">
         <div class="contact-card">
           <div class="contact-top">
             <div class="top-left"></div>
@@ -826,21 +844,34 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
       <!-- /* Contact Section End */ -->
 
       <!-- /* Footer Start */ -->
-      <section class="footer-section">
+      <!-- <section class="footer-section">
         <div class="footer-container">
           <p>© 2025 copyright all right reserved</p>
         </div>
-      </section>
-    </section>
+      </section> -->
+    
     <!-- /* Footer End */ -->
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <script>
+
+      // For Navbar Toggle
+     const bars = document.querySelector(".bars");
+const resNavbar = document.querySelector(".res-navbar");
+
+bars.addEventListener("click", () => {
+  if (resNavbar.style.display === "block") {
+    resNavbar.style.display = "none";
+  } else {
+    resNavbar.style.display = "block";
+  }
+});
+
       // For Navbar Scroll Effect
       let lastScroll = 0;
       const main = document.getElementById("main-navbar");
@@ -865,16 +896,30 @@
         },
 
         breakpoints: {
-          0: {
+          320: {
             slidesPerView: 1,
+            spaceBetween:20,
           },
-          620: {
-            slidesPerView: 2,
+          576:{
+            slidesPerView:1.5,
+            spaceBetween:20
+          },
+          768: {
+            slidesPerView: 2.5,
+            spaceBetween: 20
           },
           1024: {
-            slidesPerView: 4,
+            slidesPerView: 2.5,
             spaceBetween: 20,
           },
+          1200:{
+            slidesPerView:2.8,
+            spaceBetween:20
+          },
+          1400:{
+            slidesPerView:3.5,
+            spaceBetween:20
+          }
         },
       });
 
